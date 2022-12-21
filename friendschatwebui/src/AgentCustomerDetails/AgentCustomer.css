@@ -1,0 +1,66 @@
+.formbox {
+    min-width: 100%;
+    /* border: dotted #F55A00 5vw; */
+    border: 1px solid red;
+    margin: 0vw;
+    padding: 5vw;
+    position: relative;
+
+
+    /* position:relative for .prevBtn and .nextBtn position:absolute; */
+}
+
+.formheading {
+    font-size: 35px;
+    text-align: center;
+    color: #F55A00;
+    margin: 0 0 .5vh 0;
+    border: 0px;
+}
+
+.formbox form {
+    border: 0px;
+    margin: auto;
+
+}
+
+.formbox label {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 .5vh 0;
+    border: 0px;
+}
+
+.formbox input,
+select {
+    display: inline-block;
+    width: 25%;
+    padding: .5rem .8rem .5rem .8rem;
+    /* margin: .9vw 50vw; */
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+.formbox button {
+    display: block;
+    margin-left: 46%;
+    border: 0px;
+    padding: .5rem 2.8rem .5rem 2.8rem;
+    margin-top: 1%;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(148, 245, 78);
+
+
+}
+
+button:hover {
+    background-color: rgb(245, 78, 78);
+    transition: 1s background ease;
+}

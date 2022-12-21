@@ -1,0 +1,12 @@
+
+
+.App {
+  color: #000; /* grey50 */
+  font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  height: 100%;
+  width:100%;
+  text-align: center;   
+  position:relative;
+}

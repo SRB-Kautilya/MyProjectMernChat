@@ -1,0 +1,14 @@
+.chat_box{
+    text-align: center;
+}
+
+.type_message > input{
+    width:80%;
+    text-align: left;
+
+}
+.type_message {
+    margin-bottom: 0;
+    bottom: 0px;
+
+}
