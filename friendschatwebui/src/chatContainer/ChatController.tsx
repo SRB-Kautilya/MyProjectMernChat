@@ -5,7 +5,6 @@ import { io } from 'socket.io-client'
 import { useLocation } from 'react-router-dom';
 import MessageList from './MessageList';
 const socket = io('http://localhost:3001')
-console.log('socket', socket)
 
 
 
@@ -18,14 +17,14 @@ const ChatController = (props: any) => {
 
     socket.on('receive_message', (data) => {
         //  console.log('messageList',messageList)
-        console.log('data', data)
+        console.log('receive_message', data)
         setMessageList([...messageList, data])
-        console.log('data23', messageList)
+        console.log('setMessageList', messageList)
     })
 
     const sendMessage = (e: any) => { 
 
-        console.log('data', e)
+       // console.log('data', e)
         let id = socket.id
         setMessageList([...messageList, { state, message, id }])
 
@@ -36,6 +35,7 @@ const ChatController = (props: any) => {
     const submitMessage = (e: any) => {
         if (e.key === 'Enter') {
             sendMessage(e)
+            // setMessage('')
         }
     }
 
@@ -47,7 +47,7 @@ const ChatController = (props: any) => {
                 <div className='type_message' >
                     <input placeholder='Message...' onChange={(event) => {
                         setMessage(event.target.value)
-                    }} onKeyDown={submitMessage}></input>
+                    }} onKeyDown={submitMessage} value={message}></input>
                     <button onClick={sendMessage}>send Message</button>
                 </div>
             </>

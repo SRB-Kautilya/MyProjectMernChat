@@ -9,10 +9,10 @@ type AppProps = {
 };
 
 const MessageList = ({ messageList }: AppProps) => { 
-
+console.log('messageList',messageList)
   return (
     <div className='messageList'>
-   {messageList.map((message: any,i:any)=> <div key = {i}><Message key = {i} message={message} displayName = {message.state.mane} /> </div>)}
+   {messageList.map((message: any,i:any)=> <div key = {i}><Message key = {i} message={message} displayName = {message.state.name} /> </div>)}
     </div>
   )
 
